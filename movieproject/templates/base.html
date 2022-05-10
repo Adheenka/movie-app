@@ -1,0 +1,70 @@
+{% load static %}
+
+<html lang="en">'
+<head>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <link rel="stylesheet" href="{% static 'style.css' %}">
+
+</head>
+
+
+<body>
+
+<!-- Image and text -->
+<nav class="navbar navbar-dark bg-dark">
+
+  <a class="navbar-brand" href="#">
+    online Movie store
+
+
+  </a>
+
+</nav>
+
+  <style>
+        * {
+            margin: 0%;
+
+
+           font-family: 'Dekko';font-size: 22px;
+        }
+
+        #main {
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        h1 {
+            font-family: 'georgia';
+            margin-bottom: 32px;
+            padding-left: 40px;
+             border: 1px solid;
+             color:  white;
+             margin: 50px auto;
+	         text-align: center;
+	         text-shadow: -1px -1px 0px rgba(255,255,255,0.3), 1px 1px 0px rgba(0,0,0,0.8);
+        }
+.card{
+             width: 160px;
+              height: 520px;
+              box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+}
+.btn btn-warning{
+  display: block;
+  width: 340px;
+  height: 80px;
+  cursor: pointer;
+  transition: box-shadow $time-fast linear;
+  &:hover {
+    box-shadow: 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+    </style>
+
+{% block body %}
+{% endblock %}
+
+</body>
+
+</html>
